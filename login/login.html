@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Login</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img.jpg");
+        background-position-x: 20%;
+        /* overflow: hidden; */
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index: -1;
+  }
+
+    header {
+        background-color:none;
+        color: #fff;
+        padding: 5px 30px;
+        text-align: left;
+        margin-top: -25px;
+    }
+
+    .container {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        max-width: 100%;
+        max-height: 100%;
+        width: 450px;
+        height: 712.8px;
+        background-color: rgb(0,0,0,0.7);
+        border-radius: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+
+    .form-container h2 {
+        width: 100%;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="password"], textarea {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: medium;
+        background-color: rgb(0,0,0,0.3);
+    }
+
+    input[type="submit"].red{
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: medium;
+        
+    }
+
+    
+    .form-container p{
+        margin-right: 5px;
+        color: #e1d8d8;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    input[type="submit"].tran{
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color:rgba(87, 86, 86, 0.6);
+        color:white;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: medium;
+        z-index: 1;
+    }
+
+    .anc{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom:10px;
+        
+    }
+
+    .check{
+        transform: scale(1.5);
+        margin-left: 20px;
+    }
+
+    .lab{
+        color: white;
+        
+        
+    }
+    .dull{
+        color: #100606;
+        font-size:medium;
+        margin: 20px;
+        
+    }
+
+    .anc1{
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        margin-right: 10px;
+        margin-bottom:20px;
+        font-size: 120%;
+        
+    }
+    .last{
+        color: rgb(0,0,0,0.1);
+        font-size:smaller;
+        margin-left: 20px;
+        width: 80%;
+    }
+    .anc2{
+        text-decoration: none;
+        color: blue;
+    }
+    .head{
+        margin-top: 3%;
+        color: rgb(247, 4, 4);
+        margin-left: 120px;
+        
+    }
+
+    .linkcol{
+            color: rgb(181, 172, 172);
+        }
+
+    .top-nav select {
+            background-color: rgba(0,0,0,0.6);
+            color:white;
+            border: 1px solid #ccc;
+            padding: 8px 25px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 3px;
+    }
+    
+</style>
+</head>
+<body>
+<header>
+    <h1 class="head">NETFLIX</h1>
+</header>
+<div class="container">
+    <div class="form-container">
+        <h2>Sign In</h2>
+        <form action="#" method="post" style="position: relative;">
+            <input type="text" name="mail" placeholder="Email or mobile number" required>
+            <input type="password" name="password" placeholder="password" required>
+            <input type="submit" class="red" value="Sign In">   
+        </form>
+        <p>OR</p>
+        <form action="#" method="post">
+            <input type="submit" class="tran" value="Use a sign-in code">
+        </form>
+        <a href="#" class="anc">Forgot password?</a>
+        <form action="#" method="post">
+        <input type="checkbox" class="check">&nbsp;&nbsp;<label class="lab">Remember me</label>
+        </form>
+        <form>
+            &nbsp;
+            <p class="dull">New to Netflix?<a href="#" class="anc1">Sign up now</a></p>
+            &nbsp;
+            &nbsp;
+            <p class="last">This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                <a href="#" class="anc2"> Learn more.</a></p>
+        </form>
+    </div>
+    
+</div>
+<section class="sec7">
+    <div class="sec7con" style="padding-top: 9%;">
+          <div style="display: flex;justify-content: space-evenly; width:85%;font-size: 15px;">
+            <div style="margin-bottom: 1%; font-size: 15px;">
+                <ul class="sec7li" style="color: rgb(181, 172, 172);margin-left: -5%;">
+                    <li>Questions? Call <a class="linkcol" href="#">000-800-919-1694</a></li><br>
+                    <li><a class="linkcol" href="#">FAQ</a></li><br>
+                    <li><a class="linkcol" href="#">Cookie Preferences</a></li><br>
+                    <br>
+                    <div class="top-nav">
+                    <select >English
+                        <option style="background-color: white; color: #2b2a2a;" value="English">English</option>
+                        <option style="background-color: white; color: #2b2a2a;" value="hindi">हिन्दी</option>
+                    </select></div>
+                    <br>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 1%;margin-left: -5%;">
+                <ul class="sec7li" style="color: rgb(181, 172, 172);"><br><br>
+                    <li><a class="linkcol" href="#">Help Centre</a></li><br>
+                    <li><a class="linkcol" href="#">Corporate Information</a></li><br>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 1%;margin-left: 5%;">
+                <ul class="sec7li" style="color: rgb(181, 172, 172);"><br><br>
+                    <li><a class="linkcol" href="#">Terms of use</a></li><br>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 1%; margin-left: 3%;">
+                <ul class="sec7li" style="color: rgb(181, 172, 172);"><br><br>
+                    <li><a class="linkcol" href="#">Privacy</a></li><br>
+                </ul>
+            </div>
+          </div>
+ </section>
+</body>
+</html>
